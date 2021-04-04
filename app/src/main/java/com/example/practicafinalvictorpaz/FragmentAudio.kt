@@ -78,6 +78,11 @@ class FragmentAudio : Fragment() {
             pauseRecording()
         }
 
+        binding.imgPlay.setOnClickListener {
+            pauseRecording()
+        }
+
+
         binding.imgStop.setOnClickListener {
             stopRecording()
 
@@ -117,11 +122,11 @@ class FragmentAudio : Fragment() {
                 Toast.makeText(context,"Paused!", Toast.LENGTH_SHORT).show()
                 mediaRecorder?.pause()
                 recordingStopped = true
-                binding.imgPlay.imageAlpha = 1000
-                binding.imgPause.imageAlpha = 0
+                binding.imgPlay.visibility = View.VISIBLE
+                binding.imgPause.visibility = View.INVISIBLE
             }else{
-                binding.imgPlay.imageAlpha = 0
-                binding.imgPause.imageAlpha = 1000
+                binding.imgPlay.visibility = View.INVISIBLE
+                binding.imgPause.visibility = View.VISIBLE
                 resumeRecording()
             }
         }

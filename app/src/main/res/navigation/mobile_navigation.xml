@@ -18,16 +18,11 @@
         tools:layout="@layout/fragment_audio" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.practicafinalvictorpaz.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" >
-        <action
-            android:id="@+id/action_nav_slideshow_self"
-            app:destination="@id/nav_slideshow" />
-    </fragment>
-    <fragment
         android:id="@+id/nav_video"
         android:name="com.example.practicafinalvictorpaz.FragmentVideo"
         android:label="FragmentVideo" />
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="com.example.practicafinalvictorpaz.CamaraFragment"
+        android:label="CameraFragment" />
 </navigation>

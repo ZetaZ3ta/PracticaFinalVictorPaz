@@ -21,4 +21,8 @@
     <string name="audio">Audio</string>
     <string name="video">Video</string>
     <string name="camara">Camara</string>
+
+    <!-- Fragment Camera -->
+    <string name="tomar_foto">Tomar Foto</string>
+
 </resources>
